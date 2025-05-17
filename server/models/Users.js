@@ -1,3 +1,4 @@
+// models/User.js
 import mongoose from "mongoose";
 
 const userSchema = new mongoose.Schema({
@@ -6,4 +7,4 @@ const userSchema = new mongoose.Schema({
   password: String,
 });
 
-export default mongoose.model("User", userSchema);
+export const User = mongoose.model("User", userSchema);
